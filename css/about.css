@@ -1,0 +1,45 @@
+.tujuan {
+  background-color: #dadbec;
+}
+
+.tujuan p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: left;
+  color: #757575;
+  margin-bottom: 20px;
+}
+
+.tujuan .title-text {
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  .tujuan {
+    margin-top: 0;
+  }
+
+  .row .col-50 p {
+    text-align: left;
+  }
+
+  .row .col-50 .title-text {
+    text-align: center;
+  }
+}
+
+@media (max-width: 320px) {
+  .col-50 .title-content {
+    font-size: 24px;
+  }
+
+  .tujuan .title-text {
+    margin-bottom: 20px;
+  }
+
+  .col-50 p {
+    margin-top: 35px;
+  }
+}

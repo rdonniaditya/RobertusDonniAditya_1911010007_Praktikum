@@ -1,0 +1,84 @@
+.profil .latar-belakang p {
+  margin-top: 20px;
+  font-weight: 300;
+  color: #838383;
+  font-size: 16px;
+}
+
+.latar-belakang {
+  background-color: #dadbec;
+}
+
+/*--------Accordion-------*/
+.acc-container {
+  width: 100%;
+  margin-top: 30px;
+}
+.acc-container .acc-body {
+  width: 98%;
+  width: calc(100% - 20px);
+  margin: 0 auto;
+  height: 0;
+  color: rgba(0, 0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.2);
+  line-height: 28px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.acc-container .acc-body ul li {
+  margin-top: 20px;
+}
+
+.acc-container label {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: block;
+  padding: 15px;
+  width: 100%;
+  color: black;
+  font-weight: 400;
+  box-sizing: border-box;
+  z-index: 100;
+}
+
+.acc-container input {
+  display: none;
+}
+
+.acc-container label:before {
+  font-family: "FontAwesome";
+  content: "\f067";
+  font-weight: bolder;
+  float: right;
+}
+
+.acc-container input:checked + label {
+  background-color: #30368b;
+}
+
+.acc-container input:checked + label:before {
+  font-family: "FontAwesome";
+  content: "\f00d";
+  transition: 0.5s;
+}
+
+.acc-container input:checked ~ .acc-body {
+  height: auto;
+  color: #00032f;
+  font-size: 16px;
+  padding: 20px;
+  transition: 0.5s;
+}
+
+@media (max-width: 768px) {
+  p {
+    text-align: left;
+  }
+
+  .acc-container .acc-body ul li {
+    margin-top: 10px;
+  }
+}

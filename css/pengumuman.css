@@ -1,0 +1,93 @@
+.pengumuman {
+  padding: 0 100px;
+}
+
+.pengumuman .judul {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 70px;
+  font-weight: 600;
+  color: #00032f;
+}
+
+.judul span {
+  color: #ffa202;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container .list .nama-pengumuman {
+  margin-top: 20px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.container .list .tanggal-pengumuman {
+  font-size: 16px;
+  font-weight: 300;
+  color: rgb(131, 117, 255);
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 10px;
+}
+
+.pages-indicator {
+  margin-bottom: 6rem;
+}
+
+.page {
+  padding: 0.5rem 1rem;
+  border: 1px solid #00032f;
+}
+
+.page:hover {
+  background-color: #00032f;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .pengumuman {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 425px) {
+  .banner .content h2 {
+    font-size: 2.5em;
+  }
+}
+
+@media (max-width: 320px) {
+  .banner .content h2 {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 260px) {
+  .page {
+    padding: 0.2rem 0.5rem;
+  }
+
+  @media (max-width: 241px) {
+    .banner .content h2 {
+      font-size: 1em;
+    }
+
+    .banner .content p {
+      margin-top: 20px;
+    }
+
+    .pengumuman .judul {
+      font-size: 24px;
+    }
+  }
+}

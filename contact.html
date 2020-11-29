@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMA Xaverius Pringsewu - Kontak</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+
+    <!-- ===== BOX ICONS ===== -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html" class="logo"><img src="img/Logo.png" alt=""></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navbar__menu">
+            <li class="navbar-item">
+                <a href="index.html" class="navbar-link">Home</a>
+            </li>
+            <li class="navbar-item">
+                <a href="profil.html" class="navbar-link">Profil</a>
+            </li>
+            <li class="navbar-item">
+                <a href="gallery.html" class="navbar-link">Gallery</a>
+            </li>
+            <li class="navbar-item">
+                <a href="pengumuman.html" class="navbar-link">Pengumuman</a>
+            </li>
+            <li class="navbar-item">
+                <a href="about.html" class="navbar-link">Tentang</a>
+            </li>
+            <li class="navbar-item">
+                <a href="contact.html" class="navbar-link">Kontak</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Banner -->
+    <section class="banner" id="banner">
+        <div class="content">
+            <h2>Contact</h2>
+            <p>"Hubungi kami dibawah ini"
+            </p>
+        </div>
+    </section>
+
+    <section class="contact">
+
+        <div class="google-map">
+            <div class="container">
+                <div class="title-text">Lokasi <span>K</span>ami
+                </div>
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.376217472737!2d104.97623801389796!3d-5.359432855137145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40da4b6fddf415%3A0x8ccef3bbd4f48118!2sSMA%20Xaverius%20Pringsewu!5e0!3m2!1sid!2sid!4v1606636506233!5m2!1sid!2sid"
+                        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="title">
+            <h2 class="title-text"><span>C</span>ontact Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="form">
+            <div class="container">
+                <div class="contact-form">
+                    <h3>Kirim Pesan</h3>
+                    <div class="input-box">
+                        <input type="text" placeholder="Nama">
+                    </div>
+                    <div class="input-box">
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="input-box">
+                        <textarea placeholder="Pesan"></textarea>
+                    </div>
+                    <div class="input-box">
+                        <input type="submit" value="Kirim">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer section">
+        <div class="footer__container bd-grid">
+            <div class="footer__box">
+                <img src="img/Logo.png" alt="">
+            </div>
+
+            <div class="footer__box">
+                <h3 class="footer__title">TENTANG KAMI</h3>
+                <ul>
+                    <li><a href="#" class="footer__link">Prestasi</a></li>
+                    <li><a href="#" class="footer__link">Organisasi</a></li>
+                    <li><a href="#" class="footer__link">Profil</a></li>
+            </div>
+
+            <div class="footer__box">
+                <h3 class="footer__title">AKADEMIS</h3>
+                <ul>
+                    <li><a href="#" class="footer__link">Berita</a></li>
+                    <li><a href="#" class="footer__link">Agenda</a></li>
+                    <li><a href="#" class="footer__link">Ekstrakulikuler</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__box">
+                <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
+                <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
+                <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                <a href="#" class="footer__social"><i class='bx bxl-google'></i></a>
+            </div>
+        </div>
+
+        <p class="footer__copy">&#169; 2020 Robertus Donni Aditya. All right reserved</p>
+    </footer>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', function () {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('sticky', window.scrollY > 0);
+        });
+
+        function toggleMenu() {
+            const menuToggle = document.querySelector('.menuToggle');
+            const navbar__menu = document.querySelector('.navbar__menu');
+            menuToggle.classList.toggle('active');
+            navbar__menu.classList.toggle('active');
+        }
+    </script>
+
+</body>
+
+</html>
